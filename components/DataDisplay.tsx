@@ -15,7 +15,7 @@ export const DataDisplay = () => {
       <br />
       <Center>
         <Heading as={"h1"} size="xl">
-          BlockSafe Wallet
+          Welcome to BlockSafe
         </Heading>
       </Center>
       <br />

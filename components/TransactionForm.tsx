@@ -9,14 +9,6 @@ import { ethers } from "ethers";
 export const TransactionForm = () => {
   const [address, setaddress] = useState<string>("");
   const [amount, setamount] = useState<string>("");
-  // const { result } = useInitiateTransaction({ address, amount });
-
-  // const Send = () => {
-  //   // result?.();
-  //   setaddress("");
-  //   setamount("");
-  // };
-
   const { writeContract } = useWriteContract();
 
   return (

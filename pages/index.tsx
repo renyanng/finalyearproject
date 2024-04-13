@@ -7,11 +7,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SolShare Wallet 🔐</title>
-        <meta
-          name="description"
-          content="Project built in the ETHGlobal FEVM Hackathon"
-        />
+        <title>BlockSafe</title>
+        <meta name="description" content="Project built Renyan's FYP" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container padding={10} maxW={"container.lg"}>

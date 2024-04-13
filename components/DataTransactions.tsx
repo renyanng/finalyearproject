@@ -11,7 +11,6 @@ import {
   Tbody,
   Td,
   Badge,
-  Tfoot,
 } from "@chakra-ui/react";
 import { useOwner, useTransactions } from "../hooks";
 import { ethers } from "ethers";
@@ -113,15 +112,6 @@ export const DataTransactions = () => {
                 </Tr>
               ))}
           </Tbody>
-          {/* <Tfoot>
-            <Tr>
-              <Th>Address To</Th>
-              <Th>Amount</Th>
-              <Th>Signer Owner One</Th>
-              <Th>Signer Owner Two</Th>
-              <Th>Status</Th>
-            </Tr>
-          </Tfoot> */}
           <br />
         </Table>
       </TableContainer>
