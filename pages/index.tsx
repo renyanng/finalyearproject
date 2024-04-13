@@ -1,34 +1,50 @@
-import Head from "next/head";
-import { Container } from "@chakra-ui/react";
-import { DataDisplay, DataTransactions } from "../components";
-import Script from "next/script";
+import {
+  Box,
+  Button,
+  Center,
+  Container,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  textDecoration,
+} from "@chakra-ui/react";
 
-export default function Home() {
+const LandingPage = () => {
   return (
-    <div>
-      <Head>
-        <title>BlockSafe</title>
-        <meta name="description" content="Project built Renyan's FYP" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Container padding={10} maxW={"container.lg"}>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-D95QZF84HQ"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-D95QZF84HQ');
-        `}
-        </Script>
-        <w3m-button />
-        <DataDisplay />
-        <DataTransactions />
-      </Container>
-    </div>
+    <Container maxW="container.xl">
+      {/* Hero Section */}
+
+      <Box as="section" h={"100vh"}>
+        <Center height="100%" flexDirection="column">
+          <Text
+            fontSize="4xl"
+            mb={4}
+            fontWeight={"bold"}
+            fontFamily={"monospace"}
+            bgGradient="linear(to-r, green.200, pink.500)"
+            bgClip="text"
+          >
+            Welcome to BlockSafe, the future of blockchain security.
+          </Text>
+          <Text fontSize="xl" fontWeight={"semibold"}>
+            Secure, Transparent, Immutable.
+          </Text>
+          <Button
+            mt={10}
+            bgGradient="linear(to-r, teal.500, green.500)"
+            _hover={{
+              bgGradient: "linear(to-r, red.500, yellow.500)",
+            }}
+            size="lg"
+            onClick={() => (window.location.href = "/dashboard")}
+          >
+            Launch App
+          </Button>
+        </Center>
+      </Box>
+    </Container>
   );
-}
+};
+
+export default LandingPage;

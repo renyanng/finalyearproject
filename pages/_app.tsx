@@ -6,6 +6,8 @@ import { WagmiProvider } from "wagmi";
 import { arbitrumSepolia } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/react";
+import { Suspense } from "react";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +39,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider>
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
-          <Component {...pageProps} />
+          <Suspense fallback={<Spinner />}>
+            <Component {...pageProps} />
+          </Suspense>
         </QueryClientProvider>
       </WagmiProvider>
     </ChakraProvider>
