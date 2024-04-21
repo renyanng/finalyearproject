@@ -42,7 +42,7 @@ export const DataTransactions = () => {
       <TransactionForm />
       <TableContainer>
         <Table variant="simple">
-          <TableCaption>Built for Ng Ren Yan's FYP</TableCaption>
+          <TableCaption>Built for FYP</TableCaption>
           <Thead>
             <Tr>
               <Th>Address To</Th>
