@@ -13,6 +13,7 @@ import {
 const LandingPage = () => {
   return (
     <Container maxW="container.xl">
+      <title> Blocksafe </title>
       {/* Hero Section */}
 
       <Box as="section" h={"100vh"}>
