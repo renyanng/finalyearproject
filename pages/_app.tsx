@@ -36,14 +36,17 @@ createWeb3Modal({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
-      <WagmiProvider config={config}>
-        <QueryClientProvider client={queryClient}>
-          <Suspense fallback={<Spinner />}>
-            <Component {...pageProps} />
-          </Suspense>
-        </QueryClientProvider>
-      </WagmiProvider>
-    </ChakraProvider>
+    <>
+      {" "}
+      <ChakraProvider>
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <Suspense fallback={<Spinner />}>
+              <Component {...pageProps} />
+            </Suspense>
+          </QueryClientProvider>
+        </WagmiProvider>
+      </ChakraProvider>
+    </>
   );
 }

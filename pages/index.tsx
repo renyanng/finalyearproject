@@ -26,7 +26,7 @@ const LandingPage = () => {
             bgGradient="linear(to-r, green.200, pink.500)"
             bgClip="text"
           >
-            Welcome to BlockSafe, the future of blockchain security.
+            Welcome to Gabriel, the future of blockchain security.
           </Text>
           <Text fontSize="xl" fontWeight={"semibold"}>
             Secure, Transparent, Immutable.
