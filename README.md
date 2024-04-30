@@ -30,7 +30,7 @@ In an era where digital currencies are increasingly commonplace, the security of
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/blocksafe.git](https://github.com/renyanng/finalyearproject.git
+git clone https://github.com/renyanng/finalyearproject.git
 npm install
 npm run dev
 
