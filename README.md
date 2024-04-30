@@ -28,7 +28,7 @@ In an era where digital currencies are increasingly commonplace, the security of
 - **React and Next.js**: Power the front-end application, offering a responsive and dynamic user experience.
 - **Web3.js**: Facilitates the interaction between the web application and the blockchain.
 
-## Installatio
+## Installation
 ```bash
 git clone https://github.com/yourusername/blocksafe.git](https://github.com/renyanng/finalyearproject.git
 npm install
